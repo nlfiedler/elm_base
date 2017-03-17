@@ -1,7 +1,7 @@
-defmodule ElmBase.Endpoint do
+defmodule ElmBase.Web.Endpoint do
   use Phoenix.Endpoint, otp_app: :elm_base
 
-  socket "/socket", ElmBase.UserSocket
+  socket "/socket", ElmBase.Web.UserSocket
 
   # Serve at "/" the static files from "priv/static" directory.
   #
@@ -38,5 +38,5 @@ defmodule ElmBase.Endpoint do
     key: "_elm_base_key",
     signing_salt: "F/7K4GNb"
 
-  plug ElmBase.Router
+  plug ElmBase.Web.Router
 end

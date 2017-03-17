@@ -1,4 +1,4 @@
-defmodule ElmBase.ConnCase do
+defmodule ElmBase.Web.ConnCase do
   @moduledoc """
   This module defines the test case to be used by
   tests that require setting up a connection.
@@ -25,10 +25,10 @@ defmodule ElmBase.ConnCase do
       import Ecto.Changeset
       import Ecto.Query
 
-      import ElmBase.Router.Helpers
+      import ElmBase.Web.Router.Helpers
 
       # The default endpoint for testing
-      @endpoint ElmBase.Endpoint
+      @endpoint ElmBase.Web.Endpoint
     end
   end
 

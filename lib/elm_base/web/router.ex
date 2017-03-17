@@ -1,4 +1,4 @@
-defmodule ElmBase.Router do
+defmodule ElmBase.Web.Router do
   use ElmBase.Web, :router
 
   pipeline :browser do
@@ -13,14 +13,14 @@ defmodule ElmBase.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/", ElmBase do
+  scope "/", ElmBase.Web do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", ElmBase do
+  # scope "/api", ElmBase.Web do
   #   pipe_through :api
   # end
 end

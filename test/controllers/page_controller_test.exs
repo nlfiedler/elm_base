@@ -1,5 +1,5 @@
-defmodule ElmBase.PageControllerTest do
-  use ElmBase.ConnCase
+defmodule ElmBase.Web.PageControllerTest do
+  use ElmBase.Web.ConnCase
 
   test "GET /", %{conn: conn} do
     conn = get conn, "/"

@@ -1,3 +1,3 @@
-defmodule ElmBase.LayoutViewTest do
-  use ElmBase.ConnCase, async: true
+defmodule ElmBase.Web.LayoutViewTest do
+  use ElmBase.Web.ConnCase, async: true
 end

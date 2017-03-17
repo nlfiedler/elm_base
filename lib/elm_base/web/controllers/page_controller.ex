@@ -1,4 +1,4 @@
-defmodule ElmBase.PageController do
+defmodule ElmBase.Web.PageController do
   use ElmBase.Web, :controller
 
   def index(conn, _params) do

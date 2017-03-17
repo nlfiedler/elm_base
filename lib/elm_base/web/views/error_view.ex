@@ -1,4 +1,4 @@
-defmodule ElmBase.ErrorView do
+defmodule ElmBase.Web.ErrorView do
   use ElmBase.Web, :view
 
   def render("404.html", _assigns) do

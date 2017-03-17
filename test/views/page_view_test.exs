@@ -1,3 +1,3 @@
-defmodule ElmBase.PageViewTest do
-  use ElmBase.ConnCase, async: true
+defmodule ElmBase.Web.PageViewTest do
+  use ElmBase.Web.ConnCase, async: true
 end

@@ -1,4 +1,4 @@
-defmodule ElmBase.ChannelCase do
+defmodule ElmBase.Web.ChannelCase do
   @moduledoc """
   This module defines the test case to be used by
   channel tests.
@@ -27,7 +27,7 @@ defmodule ElmBase.ChannelCase do
 
 
       # The default endpoint for testing
-      @endpoint ElmBase.Endpoint
+      @endpoint ElmBase.Web.Endpoint
     end
   end
 

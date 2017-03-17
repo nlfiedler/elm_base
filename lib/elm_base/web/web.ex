@@ -28,20 +28,21 @@ defmodule ElmBase.Web do
 
   def controller do
     quote do
-      use Phoenix.Controller
+      use Phoenix.Controller, namespace: ElmBase.Web
 
       alias ElmBase.Repo
       import Ecto
       import Ecto.Query
 
-      import ElmBase.Router.Helpers
-      import ElmBase.Gettext
+      import ElmBase.Web.Router.Helpers
+      import ElmBase.Web.Gettext
     end
   end
 
   def view do
     quote do
-      use Phoenix.View, root: "web/templates"
+      use Phoenix.View, root: "lib/elm_base/web/templates",
+                        namespace: ElmBase.Web
 
       # Import convenience functions from controllers
       import Phoenix.Controller, only: [get_csrf_token: 0, get_flash: 2, view_module: 1]
@@ -49,9 +50,9 @@ defmodule ElmBase.Web do
       # Use all HTML functionality (forms, tags, etc)
       use Phoenix.HTML
 
-      import ElmBase.Router.Helpers
-      import ElmBase.ErrorHelpers
-      import ElmBase.Gettext
+      import ElmBase.Web.Router.Helpers
+      import ElmBase.Web.ErrorHelpers
+      import ElmBase.Web.Gettext
     end
   end
 
@@ -68,7 +69,7 @@ defmodule ElmBase.Web do
       alias ElmBase.Repo
       import Ecto
       import Ecto.Query
-      import ElmBase.Gettext
+      import ElmBase.Web.Gettext
     end
   end
 

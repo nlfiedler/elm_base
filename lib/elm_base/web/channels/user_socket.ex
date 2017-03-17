@@ -1,4 +1,4 @@
-defmodule ElmBase.UserSocket do
+defmodule ElmBase.Web.UserSocket do
   use Phoenix.Socket
 
   ## Channels
@@ -30,7 +30,7 @@ defmodule ElmBase.UserSocket do
   # Would allow you to broadcast a "disconnect" event and terminate
   # all active sockets and channels for a given user:
   #
-  #     ElmBase.Endpoint.broadcast("users_socket:#{user.id}", "disconnect", %{})
+  #     ElmBase.Web.Endpoint.broadcast("users_socket:#{user.id}", "disconnect", %{})
   #
   # Returning `nil` makes this socket anonymous.
   def id(_socket), do: nil
