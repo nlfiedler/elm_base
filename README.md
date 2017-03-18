@@ -1,6 +1,6 @@
 # ElmBase
 
-The purpose of this project is to demonstrate the process of adding [Elm](http://elm-lang.org) to a [Phoenix](http://www.phoenixframework.org) web application, and then migrating from the Phoenix 1.2 layout to the new 1.3 layout.
+The purpose of this project is to demonstrate the process of adding [Elm](http://elm-lang.org) to a [Phoenix](http://www.phoenixframework.org) web application, and then migrating from the Phoenix 1.2 layout to the new 1.3 layout. And most importantly, with [elm-brunch](https://github.com/madsflensted/elm-brunch) correctly configured for the new layout.
 
 ## Initial Build
 
@@ -52,7 +52,7 @@ Create `web/static/elm/src/Main.elm` with a basic `Html.text` "hello world" styl
 
 Edit `source-directories` in `elm-package.json`, changing `.` to `src` as mentioned above.
 
-Install the [elm-brunch](https://github.com/madsflensted/elm-brunch) Brunch plugin because it saves effort in the development cycle:
+Install the elm-brunch plugin because it saves effort in the development cycle:
 
 ```
 $ cd ../../..
