@@ -1,4 +1,5 @@
 {
+  "description": "Elixir/Elm example project",
   "repository": {},
   "license": "MIT",
   "scripts": {
