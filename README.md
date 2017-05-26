@@ -9,6 +9,7 @@ The purpose of this project is to demonstrate the process of adding [Elm](http:/
 1. Install [Elixir](http://elixir-lang.org)
 1. Install [Hex](https://hex.pm): `mix local.hex`
 1. Install [Phoenix](http://www.phoenixframework.org) 1.2 generator: `mix archive.install https://github.com/phoenixframework/archives/raw/master/phoenix_new.ez`
+1. Install [Node](https://nodejs.org/)
 
 ### Database Setup
 
