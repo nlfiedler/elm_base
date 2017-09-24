@@ -114,3 +114,13 @@ $ mix phx.server
 ```
 
 Visit http://localhost:4000 to ensure you see the expected message from Elm. Bonus points if you check your browser's developer console for any errors.
+
+## Deployment
+
+When building for deployment, you will need to build two times, because of [issue #35](https://github.com/madsflensted/elm-brunch/issues/35) in `elm-brunch`.
+
+```
+$ cd assets
+$ node node_modules/.bin/brunch build
+$ node node_modules/.bin/brunch build
+```
