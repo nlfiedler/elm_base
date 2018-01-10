@@ -27,6 +27,8 @@ postgres=# \q
 
 ### Prepare the Application
 
+If you are starting from scratch, you can follow these steps. If, on the other hand, you are cloning the repo in its current state and want to compile and test everything, skip to the bottom and follow those instructions.
+
 ```
 $ mix phoenix.new elm_base
 $ cd elm_base
@@ -101,10 +103,28 @@ Follow the steps as described in Chris McCord's migration [guide](https://gist.g
 
 ### Make Sure It Works
 
+_If you have been following along from the very beginning..._
+
 ```
 $ rm -rf _build deps
 $ mix deps.get
 $ mix compile
+$ mix test
+$ cd assets
+$ npm install
+$ node node_modules/.bin/brunch build
+$ cd ..
+$ mix phx.server
+```
+
+_If you are starting by cloning this repo in its current state..._
+
+```
+$ mix deps.get
+$ mix compile
+$ mix ecto.create
+$ mkdir -p priv/repo/migrations
+$ mix ecto.migrate
 $ mix test
 $ cd assets
 $ npm install
